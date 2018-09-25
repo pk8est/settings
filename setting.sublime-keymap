@@ -1,0 +1,83 @@
+/**
+ * 自定义快捷键
+ */
+[
+    { "keys": ["ctrl+shift+c"], "command": "convert_to_utf8" },             //转成utf8
+    { "keys": ["ctrl+shift+a"], "command": "alignment" },                   //格式化
+    { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },              //复制并粘贴
+    { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },                                             //删除整行
+    { "keys": ["f12"], "command": "goto_documentation" },                    //查找php文档
+    { "keys": ["f1"], "command": "toggle_side_bar" },                      //关闭侧栏
+    { "keys": ["ctrl+f5"], "command": "svn_update" },                            //更新svn
+    { "keys": ["ctrl+f6"], "command": "svn_commit" },                            //提交svn
+    { "keys": ["ctrl+f7"], "command": "svn_log" },                                //svn日志
+    { "keys": ["ctrl+e"], "command": "find_under_expand" },                  //选择下一个
+    { "keys": ["ctrl+shift+u"], "command": "upper_case" },                //转成大写
+    { "keys": ["ctrl+shift+l"], "command": "lower_case" },                //转成小写
+    { "keys": ["ctrl+shift+a"], "command": "alignment" },                   //格式对齐
+    { "keys": ["ctrl+shift+j"], "command": "js_format" },                   //格式js
+    { "keys": ["ctrl+shift+e"], "command": "find_all_under" },
+    
+    { "keys": ["ctrl+shift+v"], "command": "paste_from_history" },    //弹出粘贴历史记录
+    { "keys": ["ctrl+t"], "command": "navigate_to_definition" },             //ctag 跳转
+
+    {//SublimeREPL配置python交互式终端快捷键
+        "keys": ["ctrl+shift+b"],
+        "caption": "SublimeREPL: Python",
+        "command": "run_existing_window_command",
+        "args": {
+            "id": "repl_python",
+            "file": "config/Python/Main.sublime-menu"
+        }
+    },
+
+    {//SublimeREPL配置python交互式终端快捷键(运行当然文件)
+        "keys": ["f5"],
+        "caption": "SublimeREPL: Python",
+        "command": "run_existing_window_command",
+        "args": {
+            "id": "repl_python_run",
+            "file": "config/Python/Main.sublime-menu"
+        }
+    },
+]
+
+
+/**
+ * 默认常用快捷键
+ * 
+Ctrl+L                  #选择整行(按住-继续选择下行)
+Ctrl+KK                 #从光标处删除至行尾
+Ctrl+Shift+K            #删除整行
+Ctrl+Shift+D            #复制光标所在整行，插入在该行之前
+Ctrl+J                  #合并行(已选择需要合并的多行时)
+Ctrl+KU                 #改为大写
+Ctrl+KL                 #改为小写
+Ctrl+D                  #选词(按住-继续选择下个相同的字符串)
+Ctrl+M                  #光标移动至括号内开始或结束的位置
+Ctrl+Shift+M            #选择括号内的内容(按住-继续选择父括号)
+Ctrl+/                  #注释整行(如已选择内容，同“Ctrl+Shift+/”效果)
+Ctrl+Shift+/            #注释已选择内容
+Ctrl+Space              #自动完成(win与系统快捷键冲突，需修改)
+Ctrl+Z                  #撤销
+Ctrl+Y                  #恢复撤销
+Ctrl+Shift+V            #粘贴并自动缩进(其它兄弟写的，实测win系统自动缩进无效)
+Ctrl+M                  #光标跳至对应的括号        
+Alt+.                   #闭合当前标签
+Ctrl+Shift+A            #选择光标位置父标签对儿
+Ctrl+Shift+[            #折叠代码
+Ctrl+Shift+]            #展开代码
+Ctrl+KT                 #折叠属性
+Ctrl+K0                 #展开所有
+Ctrl+U                  #软撤销
+Ctrl+T                  #词互换
+Ctrl+Enter              #插入行后
+Ctrl+Shift Enter        #插入行前
+Ctrl+K Backspace        #从光标处删除至行首
+Ctrl+Shift+UP           #与上行互换
+Ctrl+Shift+DOWN         #与下行互换
+Shift+Tab               #去除缩进
+Tab                     #缩进
+F9                      #行排序(按a-z)
+
+ */
